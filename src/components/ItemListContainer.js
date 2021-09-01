@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import ItemList from './ItemList';
+import { productos } from "./Products";
 
 function ItemListContainer() {
 
@@ -8,7 +9,7 @@ function ItemListContainer() {
 
   const [items, setItems] = useState([]);
 
-  /* console.log(id) */
+  /* console.log(productos) */
     const productos = [
       {
           id: 1,
@@ -75,7 +76,7 @@ const getProducts = new Promise((resolve, reject) => {
         }
 
 
-    }, 1500)
+    }, 1000)
 })
 
 useEffect(() => {
