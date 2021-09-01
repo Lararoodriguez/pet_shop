@@ -1,13 +1,86 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --bg-primario: rgb(255, 95, 95);
+  --bg-secundario:rgba(248,177,177,0.76);
+  --bg-transparente: rgba(249, 219, 219, 0.38);
+  --color-white: #fff;
+  --fuente-titulo: 'Nerko One', cursive;
+  --fuente-texto: 'Lato', sans-serif;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  background-color: var(--bg-transparente);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--fuente-titulo);
+  font-size: 48px;
+}
+
+/* Input estilos internos Flechas Up y Down */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* //Firefox: */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Contenedor Fluido y no Fluido */
+
+.container, .container-fluid {
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 998px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+/* titulo de seccions h2 */
+
+.titulo-seccion {
+  font-size: 30px;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.titulo-seccion::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 3px;
+  max-width: 200px;
+  background-color: var(--bg-primario);
+}
+.error404 {
+  text-align: center;
+  color: red;
+  font-size: 3rem;
 }

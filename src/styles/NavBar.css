@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70px;
+    background-color: var(--bg-primario);
+}
+
+.navbar__logo {
+    max-width: 150px;
+    height: 50px;
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar__item {
+    padding: 0.5rem 0rem;
+    position: relative;
+}
+
+.navbar__enlace {
+    color: var(--color-white);
+    padding: 0 1rem;
+}
+
+.navbar__item::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: width 0.7s;
+}
+
+.navbar__item:hover::before {
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+/* Input estilos internos Flechas Up y Down */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* //Firefox: */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
