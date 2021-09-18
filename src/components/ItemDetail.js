@@ -43,7 +43,7 @@ function ItemDetail({item}) {
     <div className="itemDetail">
 
         <div className="itemDetail__header">
-              <img className="itemDetail__img" src={pictureUrl} alt={title}/>
+        <img className="itemDetail__img" src={pictureUrl} alt={title}/>
         </div>
         <div className="itemDetail__body">
               <h3>{title}</h3>

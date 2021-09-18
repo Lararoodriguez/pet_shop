@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { CardContext } from "./CartContex";
 import '../styles/WidgetCart.css';
+import ImgCart from './ImgCart.svg';
 
 const WidgetCart = ({show, action}) => {
     const [data, setData] = useContext(CardContext);
@@ -35,6 +36,7 @@ const WidgetCart = ({show, action}) => {
             <h2>Carrito de compras</h2>
             <div className="widgetCart__body">
             {
+                data.items.length > 0 ?
                 data.items.map(item => (
                     <div className="widgetCartItem">
 
@@ -44,10 +46,18 @@ const WidgetCart = ({show, action}) => {
                             <span className="widgetCartItem__qty">{item.qty}</span>
                             <button className="widgetCartItem__eliminar" onClick={() => removeItem(item.id)}>X</button>
                         </div>
-
+                        
                     </div>
 
                 ))
+                :
+                <div className="CartEmpty">
+                    <h4>Ups...! No se han agregado productos</h4>
+                    <div>
+                        <img src={ImgCart} alt="Carrito Vacio"/>
+                    </div>
+                    <Link to="/">Ir a Productos Destacados</Link>    
+                </div>
             }
             </div>
 
