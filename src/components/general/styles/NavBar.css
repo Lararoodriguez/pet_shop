@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     min-height: 70px;
-    background-color: var(--bg-primario);
+    background-color: hotpink;
 }
 
 .navbar__logo {
@@ -20,7 +20,7 @@
 }
 
 .navbar__item {
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0;
     position: relative;
 }
 
@@ -42,15 +42,4 @@
 .navbar__item:hover::before {
     width: 100%;
     background-color: var(--color-white);
-}
-
-/* Input estilos internos Flechas Up y Down */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-/* //Firefox: */
-input[type="number"] {
-    -moz-appearance: textfield;
 }

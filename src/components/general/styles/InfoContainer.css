@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 
-.info-container div:nth-child(2)  {
+.info-container div:nth-child(2) {
     padding: 0 1rem;
     max-width: 400px;
 }

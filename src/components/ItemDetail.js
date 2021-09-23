@@ -11,39 +11,38 @@ function ItemDetail({item}) {
   const {stock,title, description, price, pictureUrl} = item
 
 
-
-  const onAdd = (cantidad) => {
-    if (stock >= cantidad) {
+  const onAdd = (quantity) => {
+    if (stock >= quantity) {
       const productoInCart = data.items.find((items) => items.id === item.id)
-      console.log(productoInCart)
+
       if(typeof productoInCart === 'undefined') {
-        console.log(`Se ha agregado al carrito ${cantidad} productos`)
+        console.log(`Se ha agregado al carrito ${quantity} productos`)
         setData({
           ...data,
-          cantidad: data.cantidad + cantidad,
-          items: [...data.items, {...item, qty: cantidad}]
+          quantity: data.quantity + quantity,
+          items: [...data.items, {...item, qty: quantity}]
         })
       }else{ 
-        productoInCart.qty += cantidad
+        productoInCart.qty += quantity
         setData({
           ...data,
-          cantidad: data.cantidad + cantidad,
+          quantity: data.quantity + quantity,
         })
-        console.log(`Se ha actualizo al carrito ${cantidad} productos`);
+        console.log(`Se ha actualizo al carrito ${quantity} productos`);
 
       }
       history.push('/cart');
-      /* setData({...data, [...data.items, {...obj, qty: 11}]}) */
+
     }else{
       console.log(`No hay stock disponible`)
     }
   }
-
+  
   return (
     <div className="itemDetail">
 
         <div className="itemDetail__header">
-        <img className="itemDetail__img" src={pictureUrl} alt={title}/>
+              <img className="itemDetail__img" src={`/productos/${pictureUrl}`} alt={title}/>
         </div>
         <div className="itemDetail__body">
               <h3>{title}</h3>

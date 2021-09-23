@@ -1,10 +1,10 @@
 .footer {
-    background-color: #fdf1f1;
+    background-color: white;
 }
 
 .footer .footer__titulo{
     font-size: 2.5rem;
-    color: var(--bg-primario);
+    color: hotpink;
     text-align: center;
     font-family: var(--fuente-titulo);
     letter-spacing: 2px;
@@ -21,9 +21,15 @@
 .footer .footer__social {
     flex: 0 1 calc(50% - 16px);
     text-align: center;
-    border: 2px solid var(--bg-primario);
+    border: 2px solid hotpink;
     padding: 1rem;
     color: #000;
+    transition: all 0.7s;
+}
+
+.footer .footer__social:hover {
+    background-color: hotpink;
+    color: var(--color-white);
 }
 
 .footer .footer__subtitulo{
@@ -49,7 +55,7 @@
 
 .footer .footer__input {
     padding: 0.5rem 1rem;
-    border: 1px solid var(--bg-primario);
+    border: 1px solid hotpink;
 }
 
 @media screen and (min-width:568px){
@@ -61,17 +67,18 @@
 
 .footer .footer__submit {
     padding: 0.5rem 1rem;
-    background-color: var(--bg-primario);
+    background-color: hotpink;
     border: none;
     color: var(--color-white);
     outline: none;
+    cursor: pointer;
 }
 
 .footer .container-fluid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: var(--bg-primario);
+    background-color: hotpink;
 }
 
 .footer .footer__enlace {

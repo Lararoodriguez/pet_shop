@@ -2,12 +2,11 @@
     padding: 1.5rem 1rem;
     max-width: 998px;
     margin: 0 auto;
-
 }
 
 .ItemCartContainer h2 {
     padding: 1.5rem 0;
-    color: salmon;
+    color: hotpink;
     position: relative;
 }
 
@@ -19,7 +18,7 @@
     width: 30%;
     height: 3px;
     max-width: 200px;
-    background-color: salmon;
+    background-color: hotpink;
 }
 
 .ItemCartContainer h3 {
@@ -34,7 +33,7 @@
 
 
 .ItemCartFooter button, .ItemCartFooter a {
-    border: 2px solid var(--bg-secundario);
+    border: 2px solid hotpink;
     cursor: pointer;
     padding: 0.5rem 1rem;
     color: #555;
@@ -46,7 +45,7 @@
 
 .CartEmpty h4 {
     text-align: center;
-    color: slateblue;
+    color: hotpink;
     font-size: 24px;
 }
 
@@ -62,11 +61,19 @@
 }
 
 .CartEmpty a {
-    border: 2px solid var(--bg-secundario);
+    border: 2px solid hotpink;
     display: block;
     padding: 0.5rem 1rem;
     color: #555;
     margin: 0 auto;
-    width: 300px;
+    width: 80%;
+    font-size: 0.8rem;
     text-align: center;
+}
+
+@media screen and (min-width:568px) {
+    .CartEmpty a {
+        max-width: 300px;
+        font-size: 1rem;
+    }
 }

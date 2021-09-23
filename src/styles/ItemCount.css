@@ -1,6 +1,5 @@
 .itemCount {
-     /* max-width: 320px; */
-     width: 100%;
+    width: 100%;
     margin-bottom: 1rem;
 }
 
@@ -17,7 +16,7 @@
     border: none;
     cursor: pointer;
     padding: 0.5rem 1rem;
-    color: var(--bg-primario);
+    color: hotpink;
     border-radius: 4px;
 }
 
@@ -26,10 +25,9 @@
 }
 
 .itemCount__btn--agregar {
-    border: 2px solid var(--bg-primario);
+    border: 2px solid hotpink;
     width: 100%;
 }
-
 
 .itemCount__input {
     flex: 1 1 auto;

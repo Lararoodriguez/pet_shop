@@ -18,7 +18,7 @@
 
 body {
   font-family: var(--fuente-texto);
-  background-color: var(--bg-transparente);
+  background-color: white;
 }
 
 ul {
@@ -34,18 +34,15 @@ h1 {
   font-size: 48px;
 }
 
-/* Input estilos internos Flechas Up y Down */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-/* //Firefox: */
-input[type="number"] {
-    -moz-appearance: textfield;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-/* Contenedor Fluido y no Fluido */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
 .container, .container-fluid {
   padding: 2rem 1rem;
@@ -59,8 +56,6 @@ input[type="number"] {
 .container-fluid {
   width: 100%;
 }
-
-/* titulo de seccions h2 */
 
 .titulo-seccion {
   font-size: 30px;
@@ -77,10 +72,28 @@ input[type="number"] {
   width: 30%;
   height: 3px;
   max-width: 200px;
-  background-color: var(--bg-primario);
+  background-color: hotpink;
 }
+
 .error404 {
   text-align: center;
   color: red;
   font-size: 3rem;
+}
+
+.alert {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  color: #000;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.alert.alert--warning {
+  border: 2px solid orange;
+}
+
+.alert.alert--danger {
+  border: 2px solid red;
 }

@@ -1,5 +1,5 @@
-import '../styles/InfoContainer.css';
-import frenchie from '../components/frenchie-container.png';
+import './styles/InfoContainer.css';
+import frenchie from '../img/frenchie-container.png';
 
 function InfoContainer() {
   return (

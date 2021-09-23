@@ -2,13 +2,11 @@
     height: 100vh;
     width: 80%;
     position: fixed;
-
     top: 0;
     background: var(--color-white);
     z-index: 2;
     box-shadow: -0.3rem 0 0.3rem rgba(0, 0, 0, 0.2);
     transition: right 0.5s;
-
     display: flex;
     flex-direction: column;
 }
@@ -32,7 +30,7 @@
 
 .widgetCart h2 {
     padding: 1.5rem 1rem;
-    color: salmon;
+    color: hotpink;
     position: relative;
 }
 
@@ -44,7 +42,7 @@
     width: 30%;
     height: 3px;
     max-width: 200px;
-    background-color: salmon;
+    background-color:hotpink;
 }
 
 .widgetCart__body {
@@ -64,13 +62,11 @@
 .widgetCartItem__info {
     display: flex;
     align-items: center;
-
 }
 
 .widgetCartItem__title {
     flex: 1;
     padding: 0 1rem;
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -87,42 +83,39 @@
 }
 
 .widgetCartItem__eliminar {
-    border: var(--bg-primario);
+    border: hotpink;
     outline: none;
     width: 30px;
     height: 30px;
-    background-color: var(--bg-secundario);
+    background-color: hotpink;
     cursor: pointer;
 }
 
 .widgetCartItem__cart {
-    /* background-color: var(--color-white); */
-    border: 2px solid var(--bg-secundario);
+    border: 2px solid hotpink;
     cursor: pointer;
     padding: 0.5rem 1rem;
-    color: #555;
+    color: rgb(128, 115, 115);
     width: 80%;
     margin: 0 auto;
     display: block;
     transition: all 0.5s;
     text-align: center;
     margin-bottom: 1rem;
-
 }
 
 .widgetCartItem__cart:hover {
-    background-color: var(--bg-secundario);
+    background-color:  hotpink;
     color: var(--color-white);
 }
 
 .widgetCart__footer div {
-
     display: flex;
     justify-content: space-between;
 }
 
 .widgetCart__footer button {
-    border: 2px solid var(--bg-secundario);
+    border: 2px solid  hotpink;
     cursor: pointer;
     padding: 0.5rem 1rem;
     color: #555;

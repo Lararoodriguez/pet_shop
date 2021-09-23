@@ -14,17 +14,20 @@
 
 .checkout .checkout__input {
     flex: 1 1 calc(50% - 16px);
-
-    border: 1px solid var(--bg-secundario);
+    border: 1px solid hotpink;
     padding: 0.5rem 1rem;
     border-radius: 3px;
-
+    position: relative; 
 }
 
+
 .checkout button {
-    border: 2px solid var(--bg-secundario);
+    border: 2px solid hotpink;
     cursor: pointer;
     padding: 0.5rem 1rem;
     color: #555;
+}
 
+.checkout span {
+    color: hotpink;
 }

@@ -20,8 +20,7 @@
     padding: 1rem 0;
 }
 .item a {
-    /* background-color: var(--color-white); */
-    border: 2px solid var(--bg-secundario);
+    border: 2px solid hotpink;
     cursor: pointer;
     padding: 0.5rem 1rem;
     color: #555;
@@ -31,6 +30,6 @@
 }
 
 .item a:hover {
-    background-color: var(--bg-secundario);
+    background-color: hotpink;
     color: var(--color-white);
 }
