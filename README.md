@@ -2,7 +2,7 @@
 
 ## Navegacion del Proyecto
 
-![GIF]  (/gif-app.gif "Navegacion")
+![](gif-app.gif)
 
 ## Proyecto Pet Style / Ropa y Accesorios
 
