@@ -31,7 +31,6 @@ function NavBar() {
         <nav className="navbar">
             <Link to="/"><img className="navbar__logo" src={logo} alt="Logotipo"/></Link>
             <ul className="navbar__menu">
-
               {
                 navItems.map((category, index) => <NavItem key={index} text={category.text} url={category.url} />)
 

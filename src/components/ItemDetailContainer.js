@@ -19,11 +19,13 @@ function ItemDetailContainer() {
                 setItem(doc.data())
                 console.log('Todo OK')
             }else{
-                console.log('El producto NO existe')
+                console.log('El prouducto NO existe')
                 setError(true)
             }
+            
         })
         .catch(e => console.log(e))
+
     }, []);
 
     return (
@@ -40,10 +42,7 @@ function ItemDetailContainer() {
                 :
                 <div className="alert alert--warning">😵 Lo sentimos <strong>NO</strong> encontramos el producto que estas buscando.</div>
         }
-
-
         </div>
-
       </section>
     );
 }

@@ -7,15 +7,12 @@ import carritoVacio from './img/carritoVacio.png';
 const WidgetCart = ({show, action}) => {
     const [data, setData] = useContext(CardContext);
 
-
     const clearCart = () => {
-
         setData({
             quantity: 0,
             items: []
         })
         console.log(`Se ha eliminado todos los productos del carrito`)
-        
     }
 
     const removeItem = (itemDelete) => {
@@ -45,10 +42,8 @@ const WidgetCart = ({show, action}) => {
                             <h4 className="widgetCartItem__title">{item.title}</h4>
                             <span className="widgetCartItem__qty">{item.qty}</span>
                             <button className="widgetCartItem__eliminar" onClick={() => removeItem(item.id)}>X</button>
-                        </div>
-                        
+                        </div>  
                     </div>
-                    
                 ))
                 :
                 <div className="CartEmpty">

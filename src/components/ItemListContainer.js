@@ -14,7 +14,6 @@ function ItemListContainer() {
       db.collection('productos').get()
       .then(docs => {
         let arr = [];
-        
           docs.forEach(doc => {
 
             if (typeof category_name !== 'undefined') {
@@ -30,13 +29,14 @@ function ItemListContainer() {
             }
             
           })
+
         setItems(arr)
       })
       .catch(e => console.log(e));
   }
 
   useEffect(() => {
-      getProductsFromDB();      
+      getProductsFromDB(); 
   }, [category_name]);
 
     return (
@@ -47,7 +47,6 @@ function ItemListContainer() {
           <>
             <h2 className="titulo-seccion">Productos destacados</h2>
             <ItemList items={items}/>
-            
           </> :
             <Loader />
           }
